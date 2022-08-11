@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1 class="page-header" id="title-project">My Portfolio</h1>
+        <nav class="navbar" id="nav-menu">
+            <ion-icon name="close-outline" class="header-close" id="close-menu"></ion-icon>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="../about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="../projects.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="../skills.html" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <ion-icon name="menu-outline" class="header-toggle" id="toggle-menu"></ion-icon>
+        <script src="../header.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </header>
+    <div class="main-content">
+        <h2>Story of the project</h2>
+        <span class="text">
+            During my holidays, I was thinking of programming a bit in order to discover new features.
+            The idea was to build an application with JavaScript.
+            What would do the app was decided after talking with my father that explained to me how fastidious it was to download all the images from a webpage.
+
+            Then the idea was here so first thing was to get the informations about a page and get all the images from it.
+            For this purpose I used axios as it was one that I had used previously in exercises at school.
+            Most of the things worked fine from the go. I found myself with an object I constructed that was filled with images address.
+
+            The part to download the image was a bit harder as I couldn't find a really working library that answered my needs.
+            But after many tries and a lot of search on the internet I was able to make it work.
+
+            At this point before starting the frontend, I decided to make available the ability to scrap several pages and put them in the same object stored by pages.
+            A little bit of refactoring and I was ready to start the frontend, which was the most interesting part for me.
+
+            I used electron to build my application as it seemed to be the easiest and I had briefly used it before for a school project.
+            As I wanted a dynamic interface I started working on React. I was really wrong as React and electron working together was already something to implement but React would never allow the interaction with the local files.
+            Also React was preventing from getting the pages as it was blocked most of the time by the website itself.
+
+            That's when I discovered dynamic HTML programming. I reconstructed all the frontend, it was way easier with this new implementation.
+            The app as it is today is this one.
+            <ul></ul>
+        </span>
+        
+        <h2>Explaination of the project</h2>
+        <span class="text">
+            <img src="../Images/ScrapPic_base.JPG" alt="">
+            I tried to make the interface as self explanatory as possible.
+            Simply past the url of the page to scrap in the area, then click on scrap.
+            After some seconds you should see the list of the images appearing one after the other.
+            If there are some that don't appear, that's because that image is protected from being downloaded.
+            You can remove any image you want by just clicking on it. A button "delete" should appear.
+            <img src="../Images/ScrapPic_example.JPG" alt="">
+            If you need any other page to scrap just redo the operations from the start and the new images will appear at the bottom.
+
+            When you are satified with the selection just click the download button at the top.
+            As displayed, all the images were downloaded then to your download folder in an Image folder.
+            Each page will have its own folder containing the images.
+            <ul></ul>
+        </span>
+
+        <h2>Links</h2>
+        <span class="text">
+            <a href="https://github.com/AntoineRioPro/ScrapPic" target="_blank" rel="noreferrer noopener">Github page</a>
+            <a href="https://github.com/AntoineRioPro/ScrapPic/releases/" target="_blank" rel="noopener noreferrer">Releases</a>
+        </span>
+    </div>
+</body>
+</html>

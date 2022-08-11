@@ -1,3 +1,5 @@
+/* #region general */
+
 * {
   margin: 0;
   padding: 0;
@@ -17,15 +19,27 @@ body {
   text-align: center;
 }
 
-.home {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  font-size: 4rem;
+.text {
+  white-space: pre-line;
+  font-size: large;
 }
+
+.text ul {
+  line-height: 75%;
+}
+
+.text li {
+  list-style-type: '- ';
+  list-style-position: inside;
+  padding-left: 5%;
+  font-size: 90%;
+}
+
+.date {
+  text-decoration: underline;
+}
+
+/* #endregion */
 
 /* #region Header */
 header {
@@ -149,3 +163,81 @@ ul {
 
 /* #endregion */
 
+/* #region Home */
+
+.home {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+}
+
+/* #endregion */
+
+/* #region Contact */
+
+.contact-infos {
+  font-size: large;
+}
+
+.contact-infos a {
+  text-decoration: underline;
+}
+
+.contact-infos a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+/* #endregion */
+
+/* #region About */
+
+.about-infos {
+  text-align: justify;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.about-infos h2, .about-infos h1 {
+  text-align: center;
+}
+
+/* #endregion */
+
+/* #region Skills */
+
+.skills-infos {
+  text-align: justify;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.skills-infos h2, .skills-infos h1 {
+  text-align: center;
+}
+
+/* #endregion */
+
+/* #region Projects */
+
+.project-language:hover .project-list{
+  opacity: 1;
+  max-height: inherit;
+  border: white;
+  border-radius: 10px;
+}
+
+.project-list {
+  padding: 0px;
+  margin: 0px;
+  max-height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 300ms ease; 
+}
+
+/* #endregion */
