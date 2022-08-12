@@ -31,8 +31,12 @@ body {
 .text li {
   list-style-type: '- ';
   list-style-position: inside;
-  padding-left: 5%;
   font-size: 90%;
+  margin-left: 5%;
+}
+
+.orderedlist li {
+  list-style-type: decimal;
 }
 
 .date {
@@ -224,6 +228,16 @@ ul {
 
 /* #region Projects */
 
+.projects-infos {
+  text-align: justify;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.projects-infos h2, .skills-infos h1 {
+  text-align: center;
+}
+
 .project-language:hover .project-list{
   opacity: 1;
   max-height: inherit;
@@ -239,5 +253,11 @@ ul {
   overflow: hidden;
   transition: opacity 300ms ease; 
 }
+
+/* #endregion */
+
+/* #region Projects Pages */
+
+
 
 /* #endregion */
