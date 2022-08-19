@@ -7,8 +7,8 @@
 }
 
 body {
-    font-family: 'Inter';
-    background-image: url('Images/background.jpg');
+  font-family: 'Inter';
+  background-image: url('Images/background.jpg');
 }
 
 .main-content {
@@ -17,6 +17,7 @@ body {
   color: white;
   padding: 1rem 1rem 1rem;
   text-align: center;
+  position: relative;
 }
 
 .text {
@@ -67,6 +68,75 @@ header {
   align-items: center;
   font-weight: 600;
 }
+
+/* #region Header.sticky */
+
+header.sticky {
+  height: 48px;
+  justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: rgb(10, 5, 40);
+  top: 0;
+  padding: 0 28px;
+  z-index: 1;
+}
+
+header.sticky .header-toggle {
+  display: inline;
+  color: white;
+  font-size: 24px;
+}
+
+header.sticky .header-toggle:hover {
+  cursor: pointer;
+}
+
+header.sticky .header-close {
+  position: absolute;
+  right: 24px;
+  display: block;
+  font-size: 24px;
+  border-radius: 50%;
+}
+
+header.sticky .header-close:hover {
+  background-color: rgb(15, 30, 80);
+  cursor: pointer;
+}
+
+header.sticky .navbar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  background-color: rgb(10, 5, 40);
+  color: white;
+  width: 60%;
+  height: 100vh;
+  padding: 24px 0;
+  z-index: 100;
+  transition: 0.5s;
+  border-radius: 0 0 0 50%;
+}
+
+header.sticky .nav-list {
+  display: flex;
+  flex-direction: column;
+}
+
+header.sticky .nav-item {
+  margin: 2rem 0;
+}
+
+header.sticky .show {
+  right: 0;
+}
+
+header.sticky .home {
+  font-size: 2rem;
+}
+
+/* #endregion */
 
 .page-header {
   padding-bottom: 0;

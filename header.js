@@ -22,3 +22,9 @@ else if (title_project) {
         location.href = '../index.html';
     });
 }
+
+window.addEventListener('scroll', function(){
+    navMenu.classList.remove('show');
+    var header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 5);
+})
