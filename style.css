@@ -21,7 +21,7 @@ body {
 
 .text {
   white-space: pre-line;
-  font-size: large;
+  font-size: medium;
 }
 
 .text ul {
@@ -41,6 +41,18 @@ body {
 
 .date {
   text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 2vw;
+  }
 }
 
 /* #endregion */
@@ -194,6 +206,12 @@ ul {
 .contact-infos a:hover {
   text-decoration: none;
   color: red;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-infos {
+    font-size: 2.5vw;
+  }
 }
 
 /* #endregion */
